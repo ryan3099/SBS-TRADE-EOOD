@@ -1,67 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <title>SBS TRADE EOOD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Poppins', sans-serif;
+    }
+    body {
+      background: #f8f9fb;
       color: #333;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      padding: 3rem 2rem;
       text-align: center;
+      color: white;
+      animation: fadeIn 1.2s ease-in;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
     }
-    h1, h2 {
-      color: #003366;
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      animation: floatIn 0.8s ease forwards;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
     }
     footer {
-      background-color: #003366;
-      color: white;
+      background: #f1f1f1;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes floatIn {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>SBS TRADE EOOD</h1>
+    <p>Modern Clothing Deals for the Creative World</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <section class="grid">
+    <div class="card">
+      <img src="/mnt/data/9f14a6f6-7871-4fe8-aa5b-d5926d0c9577.png" alt="Outfit 1" />
+      <div class="card-content">
+        <h3>Chic Summer Combo</h3>
+        <p>Light grey top and denim shorts with classy heels and accessories for a day out in style.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/21d0d4c0-ad1b-47c1-9b80-1ae008930a4f.png" alt="Outfit 2" />
+      <div class="card-content">
+        <h3>Red Classic Look</h3>
+        <p>Bold red accessories with a checkered shirt and white shorts. Perfect for confident expression.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/476d964a-6289-423d-a711-05240f1d12d4.png" alt="Outfit 3" />
+      <div class="card-content">
+        <h3>Soft & Elegant</h3>
+        <p>Pastel pink top paired with ripped denim shorts and straw accessories for a light sunny vibe.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/40e2b9a9-0459-4971-819d-93920866e460.png" alt="Outfit 4" />
+      <div class="card-content">
+        <h3>Playful Streetwear</h3>
+        <p>Heart-patterned shorts and a sequined tee make a cheerful fashion statement full of personality.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    Contact us: contact@sbstrade.shop | +359 892 383 681<br>
+    66 Ul. Cherkovna str., Sofia, Stolichna, 1680, Bulgaria
   </footer>
 </body>
 </html>
